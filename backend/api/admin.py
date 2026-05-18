@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ChatGroup, GroupMember, GroupMessage, PrivateMessage
+
+admin.site.register(ChatGroup)
+admin.site.register(GroupMember)
+admin.site.register(PrivateMessage)
+admin.site.register(GroupMessage)
