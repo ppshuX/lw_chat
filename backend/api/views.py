@@ -231,11 +231,11 @@ def remove_group_member_view(request, group_id, member_id):
         return fail("只有群主可以移除成员", 403)
     member = GroupMember.objects.filter(id=member_id, group=group).first()
     if not member:
-        return fail("成员不存在", 404)
+        return fail("该成员不存在", 404)
     if member.user_id == group.owner_id:
         return fail("不能移除群主")
     member.delete()
-    return ok(message="成员已移除")
+    return ok(message="该成员已移除")
 
 
 @csrf_exempt
