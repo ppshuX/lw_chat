@@ -1,5 +1,7 @@
 # LwChat 技术文档
 
+**项目地址：** [https://github.com/ppshuX/lw_chat](https://github.com/ppshuX/lw_chat)
+
 ## 1. 项目概述
 
 LwChat 是一个课程作业级 Web 聊天交互系统。系统采用前后端分离结构，前端负责聊天界面和交互，后端负责用户、消息、群聊、图片上传和 WebSocket 实时通信。
